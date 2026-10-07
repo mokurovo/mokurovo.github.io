@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>在线阅读｜高茁彬 · 游戏策划</title>
+  <link rel="stylesheet" href="reader.css">
+</head>
+<body>
+  <header class="reader-nav">
+    <div class="reader-nav-inner">
+      <a class="reader-back" href="index.html">← 返回作品集</a>
+      <div class="reader-brand">高茁彬 · 游戏策划</div>
+    </div>
+  </header>
+
+  <main class="reader-shell">
+    <section class="reader-head">
+      <div>
+        <div class="reader-kicker">在线阅读</div>
+        <h1 id="reader-title">作品文件</h1>
+        <p id="reader-meta"></p>
+      </div>
+      <div class="reader-actions">
+        <a id="download-link" class="reader-btn" href="#" download>下载 PDF</a>
+      </div>
+    </section>
+
+    <div id="reader-pages" class="reader-pages" aria-live="polite"></div>
+    <p id="reader-error" class="reader-error" hidden>无法识别该文件，请返回作品集重新进入。</p>
+  </main>
+
+  <button class="reader-top" type="button" aria-label="回到顶部" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+  <script src="reader.js"></script>
+</body>
+</html>

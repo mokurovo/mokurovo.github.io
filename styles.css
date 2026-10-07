@@ -294,3 +294,13 @@ h2{margin:0;color:var(--ink);font-size:clamp(32px,3.7vw,46px);font-weight:700;li
   html{scroll-behavior:auto}
   *,*:before,*:after{transition-duration:.01ms!important;animation-duration:.01ms!important}
 }
+
+/* In-project online reading actions */
+.file-links{display:flex;align-items:center;justify-content:flex-end;gap:12px;white-space:nowrap}
+.file-links a{color:var(--green);font-size:12px;font-weight:680}
+.file-links a+ a{color:var(--muted);font-weight:600}
+.file-links a:hover{color:var(--orange)}
+@media(max-width:580px){
+  .file-item{grid-template-columns:1fr;gap:9px}
+  .file-links{justify-content:flex-start;gap:18px}
+}
