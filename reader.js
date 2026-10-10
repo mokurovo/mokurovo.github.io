@@ -1,6 +1,7 @@
 const docs = {
+  'resume': { title:'游戏策划简历', pages:2, pdf:'assets/resume_game_design.pdf', folder:'reader-pages/resume' },
   'huazhongling': { title:'《画中灵》完整作品集', pages:14, pdf:'assets/huazhongling_portfolio.pdf', folder:'reader-pages/huazhongling' },
-  'tata': { title:'《塔塔冒险队》完整系统拆解报告', pages:35, pdf:'assets/tata_system_report.pdf', folder:'reader-pages/tata' },
+  'tata': { title:'《塔塔冒险队》完整系统拆解报告', pages:37, pdf:'assets/tata_system_report.pdf', folder:'reader-pages/tata' },
   'yq-review': { title:'《羽化》×《栖境》玩法设计与迭代复盘', pages:13, pdf:'assets/yuhua_qijing_review.pdf', folder:'reader-pages/yq-review' },
   'yuhua-rules': { title:'《羽化》完整规则书', pages:11, pdf:'assets/yuhua_rules.pdf', folder:'reader-pages/yuhua-rules' },
   'yuhua-pnp': { title:'《羽化》PNP', pages:15, pdf:'assets/yuhua_pnp.pdf', folder:'reader-pages/yuhua-pnp' },
@@ -25,13 +26,14 @@ if (!doc) {
   document.title = `${doc.title}｜在线阅读`;
   title.textContent = doc.title;
   meta.textContent = `${doc.pages}页 · 网页内直接阅读`;
-  download.href = doc.pdf;
+  const cacheVersion = (key === 'tata' || key === 'resume') ? '?v=11' : '';
+  download.href = doc.pdf + cacheVersion;
   for (let i = 1; i <= doc.pages; i++) {
     const n = String(i).padStart(2,'0');
     const figure = document.createElement('figure');
     figure.className = 'reader-page';
     const img = document.createElement('img');
-    img.src = `${doc.folder}/page-${n}.webp`;
+    img.src = `${doc.folder}/page-${n}.webp${cacheVersion}`;
     img.alt = `${doc.title} 第${i}页`;
     img.loading = i <= 2 ? 'eager' : 'lazy';
     img.decoding = 'async';
