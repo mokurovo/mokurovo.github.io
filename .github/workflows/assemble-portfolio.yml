@@ -1,0 +1,33 @@
+name: Assemble portfolio files
+on:
+  push:
+    branches: [codex/portfolio-round13-upload]
+    paths: ['.upload/**']
+permissions:
+  contents: write
+jobs:
+  assemble:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Restore original large files
+        run: |
+          python3 - <<'PYTHON'
+          import base64, hashlib, json, pathlib, shutil
+          root = pathlib.Path('.upload')
+          for item in json.loads((root / 'manifest.json').read_text()):
+              data = b''.join(base64.b64decode((root / part).read_bytes()) for part in item['parts'])
+              assert len(data) == item['size']
+              assert hashlib.sha256(data).hexdigest() == item['sha256']
+              target = pathlib.Path(item['path'])
+              target.parent.mkdir(parents=True, exist_ok=True)
+              target.write_bytes(data)
+          shutil.rmtree(root)
+          PYTHON
+      - name: Save complete website
+        run: |
+          git config user.name 'mokurovo'
+          git config user.email '2939293281@qq.com'
+          git add -A
+          git commit -m 'Restore original portfolio documents and video'
+          git push origin HEAD:codex/portfolio-round13-upload
