@@ -1,0 +1,38 @@
+{
+  "project": "游戏策划 / 高茁彬个人作品集",
+  "source": "portfolio_site_v06_round14_complete.zip",
+  "source_library_id": "libfile_b3ba105fa1d08191a250b74a71f8d8ce",
+  "repository": "mokurovo/mokurovo.github.io",
+  "production_branch": "main",
+  "production_sha": "7abf38e26f6375c642941ce698bbccf4f0cad4a6",
+  "staging_branch": "deploy-round14-staging",
+  "staging_head_before_checkpoint": "69c8d6fc249762042a35eb0db807ef9bd25fdd61",
+  "expected_files": 330,
+  "staging_files": 326,
+  "missing": [
+    {
+      "path": "assets/media/demo-showcase.mp4",
+      "bytes": 44146980,
+      "git_blob_sha": "851254d81682aa9a02cb97359b5d650e9a1516c5"
+    },
+    {
+      "path": "assets/docs/qijing-rulebook.pdf",
+      "bytes": 28492768,
+      "git_blob_sha": "883d32861a94de77e400016f31ff66942ffe8468"
+    },
+    {
+      "path": "assets/docs/ui-portfolio-preview.pdf",
+      "bytes": 18827043,
+      "git_blob_sha": "0c79097b0d05324d738e987d7d99fe1e8af50092"
+    },
+    {
+      "path": "assets/docs/yuhua-rulebook.pdf",
+      "bytes": 28546065,
+      "git_blob_sha": "9ae88839cd7650d7bf044689132c3ee774b346ac"
+    }
+  ],
+  "validation": "Missing four Git blobs returned 404 on 2026-11-03; do not deploy main until exact SHA match and all 330 resources are in final tree.",
+  "blocker": "Current connector cannot read local binary files directly; normal container git network DNS unavailable; Library container_path upload failed with container_session_unavailable.",
+  "temporary_workflow": "Previously created workflow commit removed by later staging commit; current staging tree has no .github/workflows. No workflow runs.",
+  "handoff": "Complete remaining 4 Git blobs, verify all 330 SHAs, create single source commit descended from existing main and atomically advance main, inspect Pages and live download/reader behavior."
+}
