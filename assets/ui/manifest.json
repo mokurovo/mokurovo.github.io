@@ -1,0 +1,391 @@
+{
+  "huazhongling": [
+    {
+      "label": "无相墨灵·玄砚",
+      "source_png": "hzl/1.png",
+      "webp": "assets/ui/huazhongling/1.webp",
+      "width": 600,
+      "height": 900
+    },
+    {
+      "label": "蜃灵·梦泽",
+      "source_png": "hzl/2.png",
+      "webp": "assets/ui/huazhongling/2.webp",
+      "width": 600,
+      "height": 900
+    },
+    {
+      "label": "34754964-1999-4b08-99cc-b52a23981e80",
+      "source_png": "hzl/34754964-1999-4b08-99cc-b52a23981e80.png",
+      "webp": "assets/ui/huazhongling/34754964-1999-4b08-99cc-b52a23981e80.webp",
+      "width": 900,
+      "height": 900
+    },
+    {
+      "label": "8916e8c4-9c68-4b0f-a569-22f2db12aeaf",
+      "source_png": "hzl/8916e8c4-9c68-4b0f-a569-22f2db12aeaf.png",
+      "webp": "assets/ui/huazhongling/8916e8c4-9c68-4b0f-a569-22f2db12aeaf.webp",
+      "width": 900,
+      "height": 900
+    },
+    {
+      "label": "bg_ink_box.png",
+      "source_png": "hzl/bg_ink_box.png.png",
+      "webp": "assets/ui/huazhongling/bg_ink_box-png.webp",
+      "width": 450,
+      "height": 900
+    },
+    {
+      "label": "btn_collection.png",
+      "source_png": "hzl/btn_collection.png.png",
+      "webp": "assets/ui/huazhongling/btn_collection-png.webp",
+      "width": 580,
+      "height": 140
+    },
+    {
+      "label": "btn_confirm.png",
+      "source_png": "hzl/btn_confirm.png.png",
+      "webp": "assets/ui/huazhongling/btn_confirm-png.webp",
+      "width": 900,
+      "height": 194
+    },
+    {
+      "label": "btn_end_turn.png",
+      "source_png": "hzl/btn_end_turn.png.png",
+      "webp": "assets/ui/huazhongling/btn_end_turn-png.webp",
+      "width": 900,
+      "height": 600
+    },
+    {
+      "label": "btn_reset.png",
+      "source_png": "hzl/btn_reset.png.png",
+      "webp": "assets/ui/huazhongling/btn_reset-png.webp",
+      "width": 720,
+      "height": 900
+    },
+    {
+      "label": "btn_rules.png",
+      "source_png": "hzl/btn_rules.png.png",
+      "webp": "assets/ui/huazhongling/btn_rules-png.webp",
+      "width": 900,
+      "height": 123
+    },
+    {
+      "label": "btn_start.png",
+      "source_png": "hzl/btn_start.png.png",
+      "webp": "assets/ui/huazhongling/btn_start-png.webp",
+      "width": 580,
+      "height": 140
+    },
+    {
+      "label": "btn_undo.png",
+      "source_png": "hzl/btn_undo.png.png",
+      "webp": "assets/ui/huazhongling/btn_undo-png.webp",
+      "width": 720,
+      "height": 900
+    },
+    {
+      "label": "map_golden.png",
+      "source_png": "hzl/map_golden.png.png",
+      "webp": "assets/ui/huazhongling/map_golden-png.webp",
+      "width": 900,
+      "height": 622
+    },
+    {
+      "label": "map_water.png",
+      "source_png": "hzl/map_water.png.png",
+      "webp": "assets/ui/huazhongling/map_water-png.webp",
+      "width": 900,
+      "height": 622
+    },
+    {
+      "label": "marker_animal.png",
+      "source_png": "hzl/marker_animal.png.png",
+      "webp": "assets/ui/huazhongling/marker_animal-png.webp",
+      "width": 900,
+      "height": 900
+    },
+    {
+      "label": "marker_spirit.png",
+      "source_png": "hzl/marker_spirit.png.png",
+      "webp": "assets/ui/huazhongling/marker_spirit-png.webp",
+      "width": 900,
+      "height": 900
+    },
+    {
+      "label": "spirit_b12.png",
+      "source_png": "hzl/spirit_b12.png.png",
+      "webp": "assets/ui/huazhongling/spirit_b12-png.webp",
+      "width": 600,
+      "height": 900
+    },
+    {
+      "label": "spirit_b14.png",
+      "source_png": "hzl/spirit_b14.png.png",
+      "webp": "assets/ui/huazhongling/spirit_b14-png.webp",
+      "width": 600,
+      "height": 900
+    },
+    {
+      "label": "spirit_c2.png",
+      "source_png": "hzl/spirit_c2.png.png",
+      "webp": "assets/ui/huazhongling/spirit_c2-png.webp",
+      "width": 600,
+      "height": 900
+    },
+    {
+      "label": "spirit_c3.png",
+      "source_png": "hzl/spirit_c3.png.png",
+      "webp": "assets/ui/huazhongling/spirit_c3-png.webp",
+      "width": 600,
+      "height": 900
+    },
+    {
+      "label": "spirit_c4.png",
+      "source_png": "hzl/spirit_c4.png.png",
+      "webp": "assets/ui/huazhongling/spirit_c4-png.webp",
+      "width": 600,
+      "height": 900
+    },
+    {
+      "label": "spirit_c5.png",
+      "source_png": "hzl/spirit_c5.png.png",
+      "webp": "assets/ui/huazhongling/spirit_c5-png.webp",
+      "width": 600,
+      "height": 900
+    },
+    {
+      "label": "spirit_c6.png",
+      "source_png": "hzl/spirit_c6.png.png",
+      "webp": "assets/ui/huazhongling/spirit_c6-png.webp",
+      "width": 600,
+      "height": 900
+    },
+    {
+      "label": "token_brick.png",
+      "source_png": "hzl/token_brick.png.png",
+      "webp": "assets/ui/huazhongling/token_brick-png.webp",
+      "width": 900,
+      "height": 900
+    },
+    {
+      "label": "token_foliage.png",
+      "source_png": "hzl/token_foliage.png.png",
+      "webp": "assets/ui/huazhongling/token_foliage-png.webp",
+      "width": 900,
+      "height": 900
+    },
+    {
+      "label": "token_stone.png",
+      "source_png": "hzl/token_stone.png.png",
+      "webp": "assets/ui/huazhongling/token_stone-png.webp",
+      "width": 900,
+      "height": 900
+    },
+    {
+      "label": "token_water.png",
+      "source_png": "hzl/token_water.png.png",
+      "webp": "assets/ui/huazhongling/token_water-png.webp",
+      "width": 900,
+      "height": 900
+    },
+    {
+      "label": "token_wheat.png",
+      "source_png": "hzl/token_wheat.png.png",
+      "webp": "assets/ui/huazhongling/token_wheat-png.webp",
+      "width": 900,
+      "height": 900
+    },
+    {
+      "label": "token_wood.png",
+      "source_png": "hzl/token_wood.png.png",
+      "webp": "assets/ui/huazhongling/token_wood-png.webp",
+      "width": 900,
+      "height": 900
+    }
+  ],
+  "vending": [
+    {
+      "label": "售货机标题字",
+      "source_png": "新建文件夹/01_售货机艺术字.png",
+      "webp": "assets/ui/vending/asset-01.webp",
+      "width": 900,
+      "height": 516
+    },
+    {
+      "label": "货币底槽",
+      "source_png": "新建文件夹/02_货币底槽.png",
+      "webp": "assets/ui/vending/asset-02.webp",
+      "width": 900,
+      "height": 236
+    },
+    {
+      "label": "普通火焰图标",
+      "source_png": "新建文件夹/03_红色火焰图标.png",
+      "webp": "assets/ui/vending/asset-03.webp",
+      "width": 324,
+      "height": 349
+    },
+    {
+      "label": "特殊火焰图标",
+      "source_png": "新建文件夹/04_紫色火焰图标.png",
+      "webp": "assets/ui/vending/asset-04.webp",
+      "width": 324,
+      "height": 342
+    },
+    {
+      "label": "加号按钮",
+      "source_png": "新建文件夹/05_黄色加号图标.png",
+      "webp": "assets/ui/vending/asset-05.webp",
+      "width": 225,
+      "height": 269
+    },
+    {
+      "label": "关闭按钮",
+      "source_png": "新建文件夹/06_关闭按钮.png",
+      "webp": "assets/ui/vending/asset-06.webp",
+      "width": 538,
+      "height": 550
+    },
+    {
+      "label": "切换货柜按钮",
+      "source_png": "新建文件夹/07_切换货柜按钮.png",
+      "webp": "assets/ui/vending/asset-07.webp",
+      "width": 560,
+      "height": 521
+    },
+    {
+      "label": "道具按钮底",
+      "source_png": "新建文件夹/08_道具_黄色按钮底.png",
+      "webp": "assets/ui/vending/asset-08.webp",
+      "width": 670,
+      "height": 280
+    },
+    {
+      "label": "特效按钮底",
+      "source_png": "新建文件夹/09_特效_灰色按钮底.png",
+      "webp": "assets/ui/vending/asset-09.webp",
+      "width": 667,
+      "height": 254
+    },
+    {
+      "label": "道具文字",
+      "source_png": "新建文件夹/10_道具文字.png",
+      "webp": "assets/ui/vending/asset-10.webp",
+      "width": 467,
+      "height": 288
+    },
+    {
+      "label": "特效文字",
+      "source_png": "新建文件夹/11_特效文字.png",
+      "webp": "assets/ui/vending/asset-11.webp",
+      "width": 437,
+      "height": 313
+    },
+    {
+      "label": "吞吞龙立绘",
+      "source_png": "新建文件夹/12_吞吞龙立绘.png",
+      "webp": "assets/ui/vending/asset-12.webp",
+      "width": 900,
+      "height": 900
+    },
+    {
+      "label": "切换货柜文字",
+      "source_png": "新建文件夹/13_切换货柜文字.png",
+      "webp": "assets/ui/vending/asset-13.webp",
+      "width": 800,
+      "height": 245
+    },
+    {
+      "label": "当前选择文字",
+      "source_png": "新建文件夹/14_当前选择文字.png",
+      "webp": "assets/ui/vending/asset-14.webp",
+      "width": 800,
+      "height": 311
+    },
+    {
+      "label": "底部通用按钮",
+      "source_png": "新建文件夹/15_底部通用黄色按钮.png",
+      "webp": "assets/ui/vending/asset-15.webp",
+      "width": 900,
+      "height": 387
+    },
+    {
+      "label": "播放图标",
+      "source_png": "新建文件夹/18_播放图标.png",
+      "webp": "assets/ui/vending/asset-16.webp",
+      "width": 222,
+      "height": 209
+    },
+    {
+      "label": "抖抖焰立绘",
+      "source_png": "新建文件夹/23_抖抖焰立绘.png",
+      "webp": "assets/ui/vending/asset-17.webp",
+      "width": 900,
+      "height": 900
+    },
+    {
+      "label": "转转鱼立绘",
+      "source_png": "新建文件夹/26_转转鱼立绘.png",
+      "webp": "assets/ui/vending/asset-18.webp",
+      "width": 900,
+      "height": 900
+    },
+    {
+      "label": "搬搬鹰立绘",
+      "source_png": "新建文件夹/29_搬搬鹰立绘.png",
+      "webp": "assets/ui/vending/asset-19.webp",
+      "width": 900,
+      "height": 900
+    },
+    {
+      "label": "说明区装饰背景",
+      "source_png": "新建文件夹/31_吞吞龙说明区装饰背景.png",
+      "webp": "assets/ui/vending/asset-20.webp",
+      "width": 900,
+      "height": 675
+    },
+    {
+      "label": "数字4",
+      "source_png": "新建文件夹/32_数字4.png",
+      "webp": "assets/ui/vending/asset-21.webp",
+      "width": 900,
+      "height": 900
+    },
+    {
+      "label": "标题笔触底",
+      "source_png": "新建文件夹/33_吞吞龙标题粉色笔触底.png",
+      "webp": "assets/ui/vending/asset-22.webp",
+      "width": 900,
+      "height": 300
+    },
+    {
+      "label": "选中高亮框",
+      "source_png": "新建文件夹/34_选中高亮框.png",
+      "webp": "assets/ui/vending/asset-23.webp",
+      "width": 900,
+      "height": 900
+    },
+    {
+      "label": "吞吞龙文字",
+      "source_png": "新建文件夹/35_吞吞龙文字_补充版.png",
+      "webp": "assets/ui/vending/asset-24.webp",
+      "width": 900,
+      "height": 300
+    },
+    {
+      "label": "售货机空白底_全画布定位版_941x1672",
+      "source_png": "新建文件夹/售货机空白底_全画布定位版_941x1672.png",
+      "webp": "assets/ui/vending/asset-25.webp",
+      "width": 507,
+      "height": 900
+    },
+    {
+      "label": "场景背景_模糊版_原始图层_1115x1672",
+      "source_png": "新建文件夹/场景背景_模糊版_原始图层_1115x1672.png",
+      "webp": "assets/ui/vending/asset-26.webp",
+      "width": 600,
+      "height": 900
+    }
+  ]
+}
