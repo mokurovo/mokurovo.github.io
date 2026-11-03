@@ -35,12 +35,17 @@
   "blocker": "Current connector cannot read local binary files directly; normal container git network DNS unavailable; Library container_path upload failed with container_session_unavailable.",
   "temporary_workflow": "Previously created workflow commit removed by later staging commit; current staging tree has no .github/workflows. No workflow runs.",
   "handoff": "Complete remaining 4 Git blobs, verify all 330 SHAs, create single source commit descended from existing main and atomically advance main, inspect Pages and live download/reader behavior.",
-  "latest_progress": "2026-11-03: created Windows helper to transfer only four missing binary files to staging. Main remains unchanged. Awaiting one local push, then verify final tree and publish by one commit.",
+  "latest_progress": "2026-11-03: User first local push failed after 82.95 MiB (curl 55 connection reset); remote still 79dcd7d, main still 7abf38e, four blobs returned 404. One-by-one resumable retry helper prepared and uploaded; next user action run 02_retry_round14_one_by_one.bat (without dragging Round14 ZIP) and send staging commit.",
   "helper": {
     "library_file_id": "libfile_9ec65f245a78819197458dca3392ee5e",
     "file": "/游戏策划/round14_staging_upload_helper.zip",
     "download": "sandbox:/mnt/data/round14_staging_upload_helper.zip",
     "action": "User downloads Round14 original ZIP and the helper ZIP, extracts helper, runs 01_upload_round14_missing.bat. It verifies exact SHA and pushes ONLY to deploy-round14-staging; GitHub browser auth may be needed. Then user sends commit SHA. No passwords in chat."
   },
-  "main_state": "must remain 7abf38e26f6375c642941ce698bbccf4f0cad4a6 until staging contains 330 correct files"
+  "main_state": "must remain 7abf38e26f6375c642941ce698bbccf4f0cad4a6 until staging contains 330 correct files",
+  "retry_helper": {
+    "library_file_id": "libfile_c90086d892648191ab738fbe2dd767a0",
+    "file": "round14_retry_four_files_one_by_one.zip",
+    "behavior": "Recovers existing local four verified originals from AppData, fresh-fetch staging, skip already matching remote path, push one file/commit with HTTP/1.1; can rerun after interruption; no main write."
+  }
 }
