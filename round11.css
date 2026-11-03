@@ -1,0 +1,65 @@
+/* White nacre, flat frosted controls, the original Round 8/9 orb. */
+.page-screen,.standard-detail{background:linear-gradient(125deg,#fff 6%,#fbfcff 43%,#fff 68%,#fcfcff);}
+.page-screen::before{display:block;content:"";position:fixed;inset:0;z-index:0;pointer-events:none;background:url('assets/finish/nacre-grain.svg');opacity:.035;filter:none;animation:none;transform:none;}
+.page-screen::after{display:none;}
+.page-screen .page-topbar{background:rgba(255,255,255,.84);border-bottom:1px solid rgba(144,166,193,.14);box-shadow:none;backdrop-filter:blur(12px)}
+.page-screen .back-button-orb{display:none;}
+.page-screen .back-button,.standard-detail .back-button{min-height:38px;padding:0 18px;gap:0;border:1px solid #d1dce8;border-radius:999px;background:linear-gradient(112deg,#f2f6fb,#fcfcff 58%,#f3f2f9);color:#5d758e;box-shadow:none;}
+.page-screen .back-button:hover{border-color:#b6cadf;background:linear-gradient(112deg,#edf3fa,#fafbff 58%,#eeeef8);transform:translateY(-1px);}
+.page-screen .back-button:active{transform:translateY(1px)}
+.page-screen .action-button,.standard-detail .action-button{position:relative;isolation:isolate;min-height:44px;padding:0 20px;border:1px solid #ccd3e0;border-radius:999px;background:linear-gradient(112deg,#f3f4fa 0%,#fcfaf8 53%,#eef3f9 100%);color:#526980;font-size:11px;letter-spacing:.05em;box-shadow:none;transition:transform .22s ease,border-color .22s ease,filter .22s ease;}
+.page-screen .action-button.primary,.standard-detail .action-button.primary{border-color:#bdcddd;color:#466584;background:linear-gradient(112deg,#e9f1fa 0%,#f5f6fc 51%,#e9eefa 100%);box-shadow:none;}
+.page-screen .action-button::before{content:none;}
+.page-screen .action-button::after{content:"";position:absolute;inset:0;border-radius:inherit;background:url('assets/finish/nacre-grain.svg');opacity:.11;pointer-events:none;}
+.page-screen .action-button:hover,.standard-detail .action-button:hover{transform:translateY(-1px);filter:brightness(1.008);border-color:#b6c4d5;box-shadow:none;}
+.page-screen .action-button.primary:hover,.standard-detail .action-button.primary:hover{background:linear-gradient(112deg,#e6effa,#f3f5fc 51%,#e7ecf8);border-color:#abc1d8;box-shadow:none;}
+.page-screen .action-button:active{transform:translateY(1px);filter:brightness(.992)}
+.page-screen .page-meta span{color:#7a8da1;border-color:#d7e0ea;background:linear-gradient(110deg,#fbfdff,#f3f6fb 65%,#f6f5fb);box-shadow:none;}
+.page-screen .page-cover{background:linear-gradient(135deg,#fff,#f8fbff);border-color:#d5e0eb;box-shadow:0 12px 30px rgba(55,86,124,.035),inset 0 1px 0 #fff;}
+.page-screen .resource-card{border-color:#d9e2ec;background:linear-gradient(132deg,rgba(255,255,255,.96),rgba(247,250,255,.86));box-shadow:0 5px 18px rgba(55,86,124,.025);}
+.page-screen .resource-card::before{background:radial-gradient(ellipse,rgba(218,232,248,.16),transparent 75%);}
+.page-screen .resource-card:hover{border-color:#bfcede;background:linear-gradient(130deg,#fff,#f5f9ff);}
+.page-screen .page-heading::after{background:linear-gradient(90deg,#bfd1e5,rgba(214,222,238,.35),transparent);}
+.page-screen button:focus-visible,.page-screen a:focus-visible{outline:2px solid #8cabce;outline-offset:4px;}
+.sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important;}
+/* Centered exhibition frame, with the old two circular guide lines. */
+.ui-page{width:min(980px,calc(100% - 64px));padding:30px 0 36px;}
+.physics-zone{position:relative;display:grid;place-items:center;height:min(660px,calc(100svh - 220px));min-height:460px;margin:0;overflow:hidden;isolation:isolate;touch-action:pan-y;border:1px solid rgba(205,220,233,.76);border-radius:25px;background:radial-gradient(ellipse at 50% 52%,rgba(229,240,249,.58),transparent 37%),radial-gradient(ellipse at 74% 22%,rgba(249,235,216,.18),transparent 35%),linear-gradient(135deg,rgba(255,255,255,.97),rgba(247,250,253,.91));box-shadow:0 18px 48px rgba(45,78,111,.035),inset 0 1px 0 rgba(255,255,255,.94);}
+.physics-zone::before,.physics-zone::after{content:"";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);aspect-ratio:1;width:min(64%,440px);height:auto;max-width:none;max-height:none;border:1px solid rgba(166,197,222,.23);border-radius:50%;pointer-events:none;background:none;filter:none;animation:none;}
+.physics-zone::after{width:min(88%,600px);border-color:rgba(217,183,127,.18);}
+.physics-zone .orb-stack{position:relative;left:auto;top:auto;transform:none;display:flex;flex-direction:column;align-items:center;gap:24px;z-index:3;pointer-events:none;}
+.physics-zone .liquid-orb{pointer-events:auto;flex:none;transition:box-shadow .25s ease,filter .25s ease;}
+.physics-zone .liquid-orb.is-grabbed{cursor:grabbing;animation:none;}
+.physics-zone .orb-hint{display:flex;flex-direction:column;gap:8px;text-align:center;min-width:270px;pointer-events:none;}
+.physics-zone .orb-hint strong{font:italic 18px var(--serif);letter-spacing:.16em;color:#35597a;}
+.physics-zone .orb-hint span{font-size:12px;letter-spacing:.065em;color:#8298ae;}
+.physics-zone .orb-hint small{font-size:11px;color:#9aabbc;letter-spacing:.06em;}
+.orb-stack.is-dissolving .orb-hint{opacity:0;transition:opacity .25s ease;}
+.piece-layer{position:absolute;inset:0;z-index:2;pointer-events:none;}
+.physics-piece{position:absolute;left:0;top:0;display:block;padding:0;border:0;border-radius:0;background:none;box-shadow:none;pointer-events:auto;touch-action:none;cursor:grab;user-select:none;will-change:transform;-webkit-user-drag:none;transform-origin:50% 50%;}
+.physics-piece img{width:100%;height:100%;display:block;object-fit:contain;pointer-events:none;user-select:none;-webkit-user-drag:none;filter:drop-shadow(0 2px 2px rgba(37,60,86,.12));transition:filter .15s ease;}
+.physics-piece:hover img{filter:drop-shadow(0 3px 4px rgba(45,75,110,.20));}
+.physics-piece.is-held{cursor:grabbing;}
+.physics-piece.is-held img{filter:drop-shadow(0 10px 8px rgba(45,75,110,.20));}
+.playground-controls{position:relative;min-height:83px;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:10px;padding:16px 0 0;}
+.playground-controls .physics-hint{position:static;inset:auto;margin:0;color:#8d9fb3;font-size:10px;letter-spacing:.09em;pointer-events:none;}
+.physics-hint i{font-style:normal;margin:0 8px;color:#b5c3d2;}
+.playground-controls .asset-return{display:inline-flex;align-items:center;justify-content:center;margin:0;min-height:36px;padding:0 24px;border:1px solid #cbd7e5;border-radius:999px;background:linear-gradient(112deg,#eff4fb,#f9f9fc 55%,#eef0f8);color:#607c9b;box-shadow:none;font:11px var(--sans);letter-spacing:.12em;cursor:pointer;transition:border-color .2s,transform .2s;}
+.playground-controls .asset-return:hover{border-color:#a9c1dc;transform:translateY(-1px);}
+.playground-controls .asset-return:active{transform:translateY(1px);}
+.playground-controls .asset-return:disabled{opacity:.58;cursor:default;}
+/* Luminous frosted backing, with the artwork gently lifted away from it. */
+.piece-inspector{width:min(610px,88vw);max-height:90vh;padding:34px 28px 24px;overflow:auto;border:1px solid #c9d6e6;border-radius:22px;background:linear-gradient(130deg,#fcfdff,#f5f7fc);color:#52708f;box-shadow:0 24px 70px rgba(50,76,111,.13);}
+.piece-inspector::backdrop{background:rgba(241,246,253,.76);backdrop-filter:blur(8px);}
+.piece-inspector figure{margin:0;display:flex;flex-direction:column;align-items:stretch;gap:19px;}
+.inspector-material{position:relative;isolation:isolate;display:grid;place-items:center;min-height:min(52vh,430px);padding:28px;border:1px solid rgba(188,202,224,.72);border-radius:17px;background:radial-gradient(ellipse at 27% 18%,rgba(255,255,255,.84),transparent 64%),linear-gradient(122deg,#e0e9f4,#edeef8 48%,#dce6f3);box-shadow:inset 0 1px 0 rgba(255,255,255,.9);overflow:hidden;}
+.inspector-material::before{content:"";position:absolute;inset:0;z-index:0;background:url('assets/finish/nacre-grain.svg');opacity:.16;pointer-events:none;}
+.inspector-material::after{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;background:linear-gradient(115deg,rgba(255,255,255,.34),transparent 48%,rgba(255,255,255,.12) 78%,transparent);}
+.inspector-material img{position:relative;z-index:1;display:block;max-width:100%;max-height:min(49vh,390px);width:auto;height:auto;object-fit:contain;filter:drop-shadow(0 10px 10px rgba(48,74,109,.17));animation:material-hover 6s ease-in-out infinite;}
+@keyframes material-hover{0%,100%{transform:translateY(2px)}50%{transform:translateY(-3px)}}
+.piece-inspector figcaption{text-align:center;font:15px/1.6 var(--serif);letter-spacing:.045em;}
+#piece-inspector-close{position:absolute;right:10px;top:7px;z-index:2;width:30px;height:27px;padding:0;border:0;background:none;color:#6a829f;font-size:22px;cursor:pointer;}
+@media(max-width:900px){.ui-page{width:calc(100% - 44px);}.physics-zone{height:540px;min-height:420px;}}
+@media(max-height:520px) and (orientation:landscape){.ui-page{padding-top:20px;}.physics-zone{height:420px;min-height:360px;}.physics-zone .liquid-orb{width:clamp(132px,22vh,190px);}.physics-zone .orb-stack{gap:16px;}.physics-zone::before{width:260px;}.physics-zone::after{width:360px;}.inspector-material{min-height:190px;padding:20px;}.inspector-material img{max-height:47vh;}}
+@media(max-width:680px){.ui-page{width:calc(100% - 24px);}.physics-zone{border-radius:18px;}.piece-inspector{padding:31px 18px 20px;}}
+@media(prefers-reduced-motion:reduce){.physics-zone .liquid-orb,.physics-zone .liquid-orb::before,.inspector-material img{animation:none!important;}.physics-piece img{transition:none;}}
