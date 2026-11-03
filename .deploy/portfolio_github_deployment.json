@@ -34,5 +34,13 @@
   "validation": "Missing four Git blobs returned 404 on 2026-11-03; do not deploy main until exact SHA match and all 330 resources are in final tree.",
   "blocker": "Current connector cannot read local binary files directly; normal container git network DNS unavailable; Library container_path upload failed with container_session_unavailable.",
   "temporary_workflow": "Previously created workflow commit removed by later staging commit; current staging tree has no .github/workflows. No workflow runs.",
-  "handoff": "Complete remaining 4 Git blobs, verify all 330 SHAs, create single source commit descended from existing main and atomically advance main, inspect Pages and live download/reader behavior."
+  "handoff": "Complete remaining 4 Git blobs, verify all 330 SHAs, create single source commit descended from existing main and atomically advance main, inspect Pages and live download/reader behavior.",
+  "latest_progress": "2026-11-03: created Windows helper to transfer only four missing binary files to staging. Main remains unchanged. Awaiting one local push, then verify final tree and publish by one commit.",
+  "helper": {
+    "library_file_id": "libfile_9ec65f245a78819197458dca3392ee5e",
+    "file": "/游戏策划/round14_staging_upload_helper.zip",
+    "download": "sandbox:/mnt/data/round14_staging_upload_helper.zip",
+    "action": "User downloads Round14 original ZIP and the helper ZIP, extracts helper, runs 01_upload_round14_missing.bat. It verifies exact SHA and pushes ONLY to deploy-round14-staging; GitHub browser auth may be needed. Then user sends commit SHA. No passwords in chat."
+  },
+  "main_state": "must remain 7abf38e26f6375c642941ce698bbccf4f0cad4a6 until staging contains 330 correct files"
 }
